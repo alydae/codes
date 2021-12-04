@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<head>
+ 
+<!--
+ 
+    ICONS I
+        by alydae
+        
+            - do not steal any part of this code
+            - do not even TOUCH the credit
+            - direct questions to enchantedthemes.tumblr.com
+            
+    thank you for using!!!
+ 
+-->
+ 
+<title>icons</title>
+<link rel="shortcut icon" href="{Favicon}">
+ 
+<!-- scripts - DO NOT TOUCH -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script src="http://static.tumblr.com/rzl30kg/eAxm7a751/jquery.style-my-tooltips.js"></script>
+<script>
+   (function($){
+       $(document).ready(function(){
+           $("[title]").style_my_tooltips({
+               tip_follows_cursor:true,
+               tip_delay_time:200,
+               tip_fade_speed:300
+           }
+               );
+       });
+   })(jQuery);
+</script>
+
+<!-- custom font -->
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'> 
+ 
+ 
+<style type="text/css">
+
+@keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+/*-- selection --*/
+
+::-moz-selection { background:#eee; color:#222; }
+::selection { background:#eee; color:#222; }
+
+/*-- scrollbar --*/
+
+::-webkit-scrollbar {  
+    width:1px;  
+    height:2px;
+}  
+   
+::-webkit-scrollbar-thumb { background-color:#aaa; } /* scrollbar colour */
+ 
+/*-- tooltips --*/
+
+#s-m-t-tooltip {
+    color:#666;
+    background-color:#fafafa; 
+    font-size:8px;
+    font-family:'Open Sans', helvetica, sans-serif;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    text-align:center;
+    position:absolute;
+    padding:0px 5px 0px 5px;
+    margin-top:30px;
+    border:1px solid #eee;
+    z-index:9999;
+}
+
+/*-- tumblr controls --*/
+
+.tmblr-iframe, .iframe-controls–desktop {
+    display:none !important;
+}
+
+/*-- transitions --*/
+
+a, a:hover, .links i, .links i:hover, #icons, #icons img {
+    transition-duration: 0.6s;  
+    -moz-transition-duration: 0.6s;  
+    -webkit-transition-duration: 0.6s;  
+    -o-transition-duration: 0.6s;
+}
+
+/*-- general customisation --*/
+
+body {
+    color:#666; /* text colour */
+    background-color:#fff; /* background colour */
+    font-style:normal; 
+    font-family:'Open Sans', helvetica, sans-serif; 
+    font-size:10px; 
+    font-weight:400;
+    text-decoration:none; 
+    line-height:180%; 
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    -webkit-animation: fadein 1.5s;
+    -moz-animation: fadein 1.5s;
+    -o-animation: fadein 1.5s; 
+    animation: fadein 1.5s;
+}
+
+a {
+    text-decoration:none;
+    color:#888; /* links colour */
+}   
+    
+a:hover {
+    color:#222; /* links hover colour */
+    cursor:pointer;
+}
+
+b, strong { font-weight:600; color:#444; }
+i, em { font-style:italic; }
+
+/*-- header --*/
+
+header {
+    position:static;
+    margin:100px auto;
+    width:400px;
+    height:150px;
+}
+
+.title {
+    padding:10px;
+    text-transform:uppercase;
+    text-align:center;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:1px;
+    color:#222; /* title colour */
+}
+
+.title:after {
+    content:"";
+    height:1px;
+    width:100px;
+    background:#eee;
+    display:block;
+    margin:10px auto 0px;
+}
+
+.desc {
+    width:230px;
+    max-height:60px;
+    margin:10px;
+    padding-right:10px;
+    text-align:right;
+    overflow-y:auto;
+}
+
+.links {
+    width:130px;
+    max-height:50px;
+    margin:-75px 250px;
+    padding:10px;
+    text-align:left;
+    border-left:1px solid #eee;
+}
+
+.links a { display:block; }
+.links a:before { content:'>'; margin-right:7px; }
+.links a:hover { padding-left:10px; }
+
+/*-- left sidebar --*/
+
+#lsidebar {
+    position:fixed;
+    width:150px;
+    top:100px;
+    left:calc(50% - ((70px + 12px) * 5) / 2 - 225px);
+    /* if you change the number of columns, change the '5' after * to the number of columns you have. do not touch anything else. */
+    display:none;
+    text-align:right;
+}
+
+.t { 
+    padding:10px;
+    text-transform:uppercase;
+    font-size:11px; 
+    border-bottom:1px solid #eee;
+    font-weight:600;
+}
+
+.d { padding:10px; }
+
+#rsidebar {
+    position:fixed;
+    width:150px;
+    top:100px;
+    left:calc(50% + ((70px + 12px) * 5) / 2 + 75px);
+    /* if you change the number of columns, change the '5' after * to the number of columns you have. do not touch anything else.  */
+    display:none;  
+    text-align:left;
+}
+
+#rsidebar #sort { margin:0px -35px; text-align:left; }
+#rsidebar #sort li { display:block; line-height:160%; }
+#rsidebar #sort a:before { content:'>'; margin-right:7px; }
+#rsidebar #sort a:hover { padding-left:10px; }
+
+/*--filters--*/
+
+#sort {
+    margin-top:85px;
+    width:100%;
+    text-align:center;
+}
+
+#sort ul {
+    display:block;
+    list-style:none; 
+    line-height:100%;
+}
+
+#sort a { display:inline; margin:5px; }
+#sort li { display:inline; list-style:none; } 
+#sort li a.selected { font-weight:600; color:#222; }
+
+/*-- icons --*/
+
+#container {
+    padding:0!important;
+    margin:-50px auto 100px;
+    width:calc((70px + 12px) * 5); 
+    /* ((image width + 2*margin) * number of columns) 
+    if you change the size of the icon, ctrl/cmd + f to find all the 70px and change that to your size. similarly with the margin spacing, if you change that, ctrl/cmd + f to find all the 12px
+    */
+}
+
+/*-- media --*/
+
+#content {
+    margin-top:0px;
+    width:100%;
+}
+
+#icons {
+    position:relative;
+    margin:6px; 
+    height:70px; /* image height */
+    width:70px; /* image width */
+}
+
+#icons img {
+    height:70px; /* image height */
+    width:70px; /* image width */
+}
+
+/*-- credit - DO NOT TOUCH --*/
+
+.credit a {
+    font-size:10px;
+    bottom:15px;
+    right:20px;
+    position:fixed;
+    text-transform:uppercase;
+}
+
+</style>
+</head>
+
+
+<!-- scripts - DO NOT TOUCH -->
+
+<script type="text/javascript">
+$(document).scroll(function () {
+    var y = $(this).scrollTop();
+    if (y > 300) {
+        $('#lsidebar').fadeIn();
+    } if (y < 300) {
+        $('#lsidebar').fadeOut();
+    }
+});
+</script>
+
+<script type="text/javascript">
+$(document).scroll(function () {
+    var y = $(this).scrollTop();
+    if (y > 300) {
+        $('#rsidebar').fadeIn();
+    } if (y < 300) {
+        $('#rsidebar').fadeOut();
+    }
+});
+</script>
+
+
+<body>
+
+
+<header><!-- start header -->
+
+<div class="title">icons</div> <!-- title -->
+<div class="desc">
+    this is where a desciption goes. it will scroll if it reaches the maximum height. you need something here because otherwise it will stuff up the design of the entire header. 
+</div>
+<div class="links">
+    <a href="/">index</a>
+    <a href="/ask">ask</a>
+    <a href="/">link</a>
+</div>
+
+<!-- HOW TO CUSTOMISE THE FILTERS
+
+template: 
+<ul id="filters" class="option-set clearfix" data-option-key="filter">
+    <li><a href="#filter" data-option-filter=".icon">all</a></li>
+    <li><a href="#filter" data-option-filter=".filter">filter name</a></li>
+    <li><a href="#filter" data-option-filter=".filter">filter name</a></li>
+    <li><a href="#filter" data-option-filter=".filter">filter name</a></li>
+</ul>
+
+in order to make your filters match your icons, you only need to change the '.filter' and 'filter name part'. it is essential that you do not change any other part.
+for example, if I wanted to make my icons filter by colour icons only, my code would look like this
+    <li><a href="#filter" data-option-filter=".colour">colour</a></li>
+note the areas where it's been changed.
+
+you can add a second lot of fitlers by copying the template above and placing it below the given filters
+
+-->
+
+<div id="sort">
+<ul id="filters" class="option-set clearfix" data-option-key="filter">
+    <li><a href="#filter" data-option-filter=".icon">all</a></li> <!-- this needs to stay here -->
+    <li><a href="#filter" data-option-filter=".filter">filter name</a></li>
+    <li><a href="#filter" data-option-filter=".filter">filter name</a></li>
+    <li><a href="#filter" data-option-filter=".filter">filter name</a></li>
+</ul>
+</div>
+    
+</header><!-- end header -->
+
+
+<div id="lsidebar"><!-- start left sidebar-->
+<div class="t">icons</div> <!-- subtitle -->
+<div class="d">
+    like the description in the header, one is also needed here. it can be the same thing or it can be different. it will grow longer with the text - there is no scrollbar here. 
+</div>
+</div><!-- end left sidebar-->
+
+
+<div id="rsidebar"><!-- start right sidebar-->
+<div class="t">filter by:</div> <!-- subtitle -->
+
+<!-- 
+the filters for this section should be identical to the ones above in the header. just copy all the filters here. like the description, it will grow longer with the text - there is no scrollbar.
+-->
+
+<div id="sort">
+<ul id="filters" class="option-set clearfix" data-option-key="filter">
+    <li><a href="#filter" data-option-filter=".icon">all</a></li> <!-- this needs to stay here -->
+    <li><a href="#filter" data-option-filter=".filter">filter name</a></li>
+    <li><a href="#filter" data-option-filter=".filter">filter name</a></li>
+    <li><a href="#filter" data-option-filter=".filter">filter name</a></li>
+</ul>
+</div>
+</div><!-- end right sidebar-->
+
+
+<div id="container">
+
+<div id="content" class="clearfix"><!-- start icons -->
+
+<!-- HOW TO ADD ICONS AND THEIR FILTERS
+
+template:
+<div id="icons" class="icon filter"><img src="IMAGE ADDRESS HERE"></div>
+
+to add icons, copy the template above as many times as you need.
+to add the filters, add the same name that you used above in the '.filter' but without the dot in front. you can add as many as you want but the 'icon' in the beginning MUST be there. then just put the image address in the part that says "IMAGE ADDRESS HERE"
+
+for example, if my icon was of a female in colour, my code would look like this
+    <div id="icons" class="icon colour femme"><img src="http://i.imgur.com/tDVMvip.png"></div>
+    
+-->
+
+<div id="icons" class="icon filter"><img src="IMAGE ADDRESS HERE"></div>
+
+</div><!-- end icons -->
+
+</div><!-- end container -->
+
+
+<!-- credit - DO NOT TOUCH -->
+
+<div class="credit">
+    <a href="http://enchantedthemes.tumblr.com" title="alydae">A.</a>
+</div>
+
+
+</body>
+
+
+<!-- scripts - DO NOT TOUCH -->
+
+<!-- filter scripts -->
+<script src="http://static.tumblr.com/fuu6t9w/eubml0pm0/jquery.isotope.min.js"></script>
+ 
+<script>
+$(function(){
+ 
+var $container = $('#content');
+ 
+$container.isotope({
+itemSelector : '.icon'
+});
+ 
+ 
+var $optionSets = $('#sort .option-set'),
+$optionLinks = $optionSets.find('a');
+ 
+$optionLinks.click(function(){
+var $this = $(this);
+// don't proceed if already selected
+if ( $this.hasClass('selected') ) {
+return false;
+}
+var $optionSet = $this.parents('.option-set');
+$optionSet.find('.selected').removeClass('selected');
+$this.addClass('selected');
+ 
+// make option object dynamically, i.e. { filter: '.my-filter-class' }
+var options = {},
+key = $optionSet.attr('data-option-key'),
+value = $this.attr('data-option-filter');
+// parse 'false' as false boolean
+value = value === 'false' ? false : value;
+options[ key ] = value;
+if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
+// changes in layout modes need extra logic
+changeLayoutMode( $this, options )
+} else {
+// otherwise, apply new options
+$container.isotope( options );
+}
+ 
+return false;
+});
+ 
+ 
+});
+</script>
+ 
+<!-- end filter scripts -->
+
+
+</html>

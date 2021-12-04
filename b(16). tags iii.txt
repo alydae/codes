@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<head>
+ 
+<!--
+
+    TAGS III (updated 13/2/19)
+        by alydae
+        
+            - do not steal any part of this code
+            - do not even TOUCH the credit
+            - direct questions to enchantedthemes.tumblr.com
+            
+    thank you for using!!!
+ 
+-->
+ 
+<title>navigation</title>
+<link rel="shortcut icon" href="{Favicon}">
+ 
+<!-- scripts - DO NOT TOUCH -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script src="https://static.tumblr.com/rzl30kg/eAxm7a751/jquery.style-my-tooltips.js"></script>
+<script>
+   (function($){
+       $(document).ready(function(){
+           $("[title]").style_my_tooltips({
+               tip_follows_cursor:true,
+               tip_delay_time:200,
+               tip_fade_speed:300
+           }
+               );
+       });
+   })(jQuery);
+</script>
+
+<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
+<script>
+$(window).load(function () {
+    $('#content').masonry({
+        itemSelector : ".box",
+    });
+});
+</script>
+
+<!-- custom font -->
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'> 
+ 
+ 
+<style type="text/css">
+
+@keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+/*-- selection --*/
+
+::-moz-selection { background:#eee; color:#222; }
+::selection { background:#eee; color:#222; }
+
+/*-- scrollbar --*/
+
+::-webkit-scrollbar {  
+    width:2px;  
+    height:2px;
+}  
+   
+::-webkit-scrollbar-thumb { background-color:#aaa; } /* scrollbar colour */
+ 
+/*-- tooltips --*/
+
+#s-m-t-tooltip {
+    color:#444;
+    background-color:#fafafa; 
+    font-size:8px;
+    font-family:'Open Sans', helvetica, sans-serif;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    text-align:center;
+    position:absolute;
+    padding:0px 5px 0px 5px;
+    border:1px solid #eee;
+    margin-top:30px;
+    z-index:9999;
+}
+
+/*-- tumblr controls --*/
+
+.tmblr-iframe, .iframe-controls–desktop {
+    display:none !important;
+}
+
+/*-- general customisation --*/
+
+body {
+    color:#666; /* text colour */
+    background-color:#fff; /* background colour */
+    font-style:normal; 
+    font-family:'Open Sans', helvetica, sans-serif; 
+    font-size:10px; 
+    font-weight:400;
+    text-decoration:none; 
+    line-height:180%; 
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    -webkit-animation: fadein 1.5s;
+    -moz-animation: fadein 1.5s;
+    -o-animation: fadein 1.5s; 
+    animation: fadein 1.5s;
+}
+
+a {
+    text-decoration:none;
+    color:#444; /* links colour */
+    transition-duration: 0.6s;  
+    -moz-transition-duration: 0.6s;  
+    -webkit-transition-duration: 0.6s;  
+    -o-transition-duration: 0.6s
+}   
+    
+a:hover {
+    color:#bad1e7; /* links hover colour */
+    cursor:pointer;
+    transition-duration: 0.6s;  
+    -moz-transition-duration: 0.6s;  
+    -webkit-transition-duration: 0.6s;  
+    -o-transition-duration: 0.6s
+}
+
+b, strong { font-weight:700; color:#444; }
+i, em { font-style:italic; }
+
+/*-- header --*/
+
+#header {
+    position:relative;
+    background:#fff;
+    width:200px;
+    margin:-30px auto;
+    padding:15px;
+    border-top:1px solid #eee; /* header border colour */
+    border-bottom:1px solid #eee; /* header border colour */
+    z-index:99;
+}
+
+.icon {
+    position:relative;
+    margin-top:100px;
+    margin-left:calc(50% - 150px);
+    width:60px;
+    height:60px;
+    z-index:9999!important;
+}
+
+.icon img { width:60px; height:60px; border-radius:100%; }
+
+.title {
+    text-align:center;
+    text-transform:uppercase;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:1px;
+    color:#222; /* title colour */   
+}
+
+.links { margin-top:10px; text-align:center; }
+
+.links a {
+    display:inline;
+    padding:5px;
+    letter-spacing:0.5px;
+    text-transform:uppercase;
+}
+
+/*-- boxes --*/
+
+#content {
+    position:relative;
+    margin:100px auto 100px auto;
+    width:calc((275px + 30px + 2px) * 2); 
+    /* ((box width + 2*margin + 2*border) * number of columns) */
+}
+
+.box {
+    margin:15px;
+    height:auto;
+    width:275px; /* box width */
+    float:left;
+    background:#fff; /* box background colour */
+    border:1px solid #fff; /* box border colour */
+}
+
+.subtitle {
+    float:left;
+    margin:0px;
+    width:60px;
+    padding:10px 15px 10px 15px;
+    text-align:center!important;
+}
+
+.subtitle h1 {
+    word-wrap:break-word;
+    text-transform:uppercase;
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:1px;
+    color:#444; /* box title colour */
+}
+
+.tags {
+    margin-left:90px;
+    width:140px;
+    padding:15px 20px 15px 0px;
+    border-left:1px solid #eee; /* tags border colour */
+}
+
+.tcontent { 
+    direction:rtl;
+    margin-left:-1px;
+    padding-left:20px;
+    overflow:scroll;
+}
+
+.more {
+    max-height:calc(18px * 10); /* 10 is the number of tags you want to show before scrolling down */
+}
+
+.tags a:before { content:">"; margin-right:5px; }
+.tags a { display:block; direction:ltr; }
+.tags a:hover { margin-left:10px; }
+
+/*-- credit - DO NOT TOUCH --*/
+
+.credit a {
+    font-size:10px;
+    bottom:15px;
+    right:20px;
+    position:fixed;
+    text-transform:uppercase;
+}
+
+</style>
+</head>
+
+
+<body>
+
+<div class="icon"><img src="{PortraitURL-128}"/></div>
+<!-- the default is your icon. if you want to change it, remove {PortraitURL-128} and replace it with the image url of the one you want. -->
+
+<div id="header">
+    <div class="title">navigation</div> <!-- title -->
+    <div class="links">
+    <!-- this is where your header links are. feel free to add more. -->
+        <a href="/">index</a>
+        <a href="/ask">message</a>
+        <a href="/">link</a>
+        <!-- do not remove this one!!! -->
+        <a href="http://enchantedthemes.tumblr.com">credit</a>
+    </div>
+</div>
+
+
+<div id="content">
+
+<!-- INSTRUCTIONS ON CUSTOMISATION
+
+template:
+<div class="box">
+    <div class="subtitle"><h1>subtitle</h1></div>
+    <div class="tags"><div class="tcontent">
+        <a href="/tagged/">tag name</a>
+        <a href="/tagged/">tag name</a>
+        <a href="/tagged/">tag name</a>
+        <a href="/tagged/">tag name</a>
+        <a href="/tagged/">tag name</a>
+    </div></div>
+</div>
+
+if the number of tags in one box gets too long and you want it to scroll, add more inside <div class="tcontent"> so it becomes
+    <div class="tcontent more">
+you can change the number of tags you want to be shown above. 
+
+-->
+
+
+<div class="box">
+    <div class="subtitle"><h1>subtitle</h1></div>
+    <div class="tags"><div class="tcontent">
+        <a href="/tagged/">tag name</a>
+        <a href="/tagged/">tag name</a>
+        <a href="/tagged/">tag name</a>
+        <a href="/tagged/">tag name</a>
+        <a href="/tagged/">tag name</a>
+    </div></div>
+</div>
+
+<div class="box">
+    <div class="subtitle"><h1>subtitle</h1></div>
+    <div class="tags"><div class="tcontent">
+        <a href="/tagged/">tag name</a>
+        <a href="/tagged/">tag name</a>
+        <a href="/tagged/">tag name</a>
+        <a href="/tagged/">tag name</a>
+        <a href="/tagged/">tag name</a>
+        <a href="/tagged/">tag name</a>
+        <a href="/tagged/">tag name</a>
+        <a href="/tagged/">tag name</a>
+    </div></div>
+</div>
+
+<div class="box">
+    <div class="subtitle"><h1>subtitle</h1></div>
+    <div class="tags"><div class="tcontent">
+        <a href="/tagged/">tag name</a>
+        <a href="/tagged/">tag name</a>
+        <a href="/tagged/">tag name</a>
+        <a href="/tagged/">tag name</a>
+        <a href="/tagged/">tag name</a>
+    </div></div>
+</div>
+
+
+</div>
+
+
+<!-- credit - DO NOT TOUCH -->
+
+<div class="credit">
+    <a href="http://enchantedthemes.tumblr.com" title="alydae">A.</a>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+/* --  
+
+	UPDATE TAB II - WIDGET VERSION
+		by alydae
+		
+		    - as this is a widget, it can be added anywhere ie. sidebars, popups. if you want it as a separate update tab, there's another version.
+            - do not steal any part of this code
+            - direct questions to enchantedthemes.tumblr.com
+	
+	thank you for using!!!    
+                                  
+-- */
+
+.updbox { 
+    width:100%;
+    line-height:150%;
+    padding:10px;
+}
+
+.updbox h1 { 
+    margin-left:5px;
+    margin-bottom:13px;
+    text-align:left;
+}
+
+table { border-collapse:collapse; }
+td { padding:5px; vertical-align:top; }
+td.updinfo { border-left:1px solid #eee; /* colour of vertical line */ }
+
+.upddate { 
+    padding-right:10px;
+    width:50px;
+    color:#222;
+    font-style:italic;
+    font-weight:600;
+    text-align:left;
+    text-transform:uppercase;
+    letter-spacing:0.5px;
+}
+    
+.updinfo {
+    padding-left:10px;
+    text-align:left;
+}
+
+.updinfo:before {
+    position:absolute;
+    content:'';
+    height:9px;
+    width:9px;
+    border-radius:50%;
+    margin-left:-15px;
+    margin-top:3px;
+    background:#eee; /* colour of circle */
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+}
+
+.updinfo:hover:before { 
+    background:#aaa; /* colour of circle on hover */
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+}
+
+</style>
+
+<!-- update tabs begin -->
+<!-- template for new update:
+  <tr>
+    <td class="upddate">date</td>
+    <td class="updinfo">what</td>
+  </tr>
+-->
+
+<div class="updbox"> 
+<h1>updates</h1> <!-- should match the title style of your theme -->
+<table>
+  <tr>
+    <td class="upddate">date</td>
+    <td class="updinfo">content</td>
+  </tr>
+  <tr>
+    <td class="upddate">date</td>
+    <td class="updinfo">content</td>
+  </tr>
+  <tr>
+    <td class="upddate">date</td>
+    <td class="updinfo">content</td>
+  </tr>
+</table>
+<!--please don't remove this bit-->
+<p><a style="margin-left:5px; font-weight:700" href="http://enchantedthemes.tumblr.com" title="alydae">©</a>
+</div>
+
+<!-- end update tabs -->

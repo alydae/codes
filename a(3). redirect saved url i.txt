@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<head>
+ 
+<!--
+ 
+    REDIRECT/SAVED URL I (updated 9/1/19)
+        by alydae
+        
+            - do not steal any part of this code
+            - do not even TOUCH the credit
+            - direct questions to enchantedthemes.tumblr.com
+
+        it needs to be installed as a theme. to use it as a mobile theme, turn off 'use default mobile theme' in the 'advanced options' of the customise panel.
+            
+    thank you for using!!!
+ 
+-->
+ 
+<title>{Title}</title>
+<link rel="shortcut icon" href="{Favicon}">
+
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+{block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+
+<meta name="color:background" content="#fafafa"/>
+<meta name="color:content" content="#ffffff"/>
+<meta name="color:border" content="#eeeeee"/>
+<meta name="color:text" content="#666666"/>
+<meta name="color:accent" content="#222222"/>
+<meta name="color:hover" content="#bad0f1"/>
+
+<meta name="image:background" content=""/>
+<meta name="image:icon" content=""/>
+
+<meta name="if:automatic redirect" content=""/>
+
+<meta name="select:icon" content="iconc" title="circle"/>
+<meta name="select:icon" content="iconr" title="rounded"/>
+<meta name="select:icon" content="iconsq" title="square"/>
+
+<meta name="select:font" content="Open Sans"/>
+<meta name="select:font" content="Karla"/>
+<meta name="select:font" content="Lato"/>
+<meta name="select:font" content="Roboto"/>
+
+<meta name="text:old url" content="old url"/>
+<meta name="text:message" content="has moved to"/>
+<meta name="text:new url" content="new url"/>
+
+<!-- scripts - DO NOT TOUCH -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script src="https://static.tumblr.com/rzl30kg/eAxm7a751/jquery.style-my-tooltips.js"></script>
+<script>
+   (function($){
+       $(document).ready(function(){
+           $("[title]").style_my_tooltips({
+               tip_follows_cursor:true,
+               tip_delay_time:200,
+               tip_fade_speed:300
+           }
+               );
+       });
+   })(jQuery);
+</script>
+
+<!-- custom font -->
+
+<link href="https://fonts.googleapis.com/css?family={select:font}:300,400,600,700,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+ 
+<style type="text/css">
+
+@keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+/*-- selection --*/
+
+::-moz-selection { background:#eee; color:#222; }
+::selection { background:#eee; color:#222; }
+
+/*-- scrollbar --*/
+
+::-webkit-scrollbar {  
+    width:1px;  
+    height:2px;
+}  
+   
+::-webkit-scrollbar-thumb { background-color:#aaa; } /* scrollbar colour */
+ 
+/*-- tooltips --*/
+
+#s-m-t-tooltip {
+    color:{color:text};
+    background-color:{color:content}; 
+    font-size:8px;
+    font-family:{select:font}, helvetica, sans-serif;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    text-align:center;
+    line-height:200%;
+    position:absolute;
+    padding:0px 5px 0px 5px;
+    margin-top:30px;
+    border:1px solid {color:border};
+    z-index:9999;
+}
+
+/*-- tumblr controls --*/
+
+.tmblr-iframe, .iframe-controls–desktop {
+    display:none !important;
+}
+
+/*-- general customisation --*/
+
+body {
+    color:{color:text}; 
+    background-color:{color:background};
+    background-image:url("{image:Background}");
+    background-repeat:repeat;
+    font-style:normal; 
+    font-family:{select:font}, helvetica, sans-serif; 
+    font-weight:400;
+    text-decoration:none; 
+    overflow:hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    -webkit-animation: fadein 1.5s;
+    -moz-animation: fadein 1.5s;
+    -o-animation: fadein 1.5s; 
+    animation: fadein 1.5s;
+}
+
+a {
+    text-decoration:none;
+    letter-spacing:0.5px;
+    color:{color:accent};
+    transition-duration: 0.6s;  
+    -moz-transition-duration: 0.6s;  
+    -webkit-transition-duration: 0.6s;  
+    -o-transition-duration: 0.6s
+}   
+    
+a:hover {
+    color:{color:hover};
+    transition-duration: 0.6s;  
+    -moz-transition-duration: 0.6s;  
+    -webkit-transition-duration: 0.6s;  
+    -o-transition-duration: 0.6s
+}
+
+small { font-size:10px; }
+
+/*-- content --*/
+
+#content {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width:60vw;
+    height:60vh;
+    background-color:{color:content};
+    border:1px solid {color:border};
+}
+
+#everything {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+.icon {
+    position:relative;
+    height:64px;
+    width:64px;
+    margin:0px auto;
+}
+
+.icon img { width:64px; height:64px; }
+
+.iconc { border-radius:100%; }
+.iconr { border-radius:10px; }
+.iconsq { border-radius:0px; }
+
+h1 {
+    color:{color:accent};
+    text-transform:lowercase;
+    font-weight:600;
+    font-style:italic;
+    font-size:14px;
+    letter-spacing:0.5px;
+    margin:3px;
+}
+
+h2 {
+    color:{color:accent};
+    text-transform:uppercase;
+    font-weight:700;
+    font-size:18px;
+    margin:20px 20px 0px 20px;
+}   
+
+h2 a { letter-spacing:3px; }
+h2 a:hover { letter-spacing:8px; }
+
+.text {
+    position:relative;
+    text-align:center;
+    margin:20px auto 0px;
+    font-size:12px; 
+}
+
+/*-- credit - DO NOT TOUCH --*/
+
+.credit a {
+    font-size:10px;
+    bottom:15px;
+    right:20px;
+    position:fixed;
+}
+
+</style>
+</head>
+
+
+<body>
+
+<div id="content">
+
+<div id="everything">
+    <div class="icon"><img src="{image:icon}" class="{select:icon}"/></div>
+    <div class="text">
+        <h1>{text:old url}</h1> 
+        {text:message}
+        <h2><a href="http://{text:new url}.tumblr.com">{text:new url}</a></h2>
+        {block:ifautomaticredirect}
+        <small><i>you will be redirected...</i></small>
+        {/block:ifautomaticredirect}
+    </div>
+</div>
+
+</div>
+
+{block:ifautomaticredirect}
+<script>
+ setTimeout( redirectTumblr, 3000 );
+
+ function redirectTumblr() { 
+   location.replace('http://{text:new url}.tumblr.com' + location.pathname);
+ } 
+</script> 
+{/block:ifautomaticredirect}
+
+<!-- credit - DO NOT TOUCH -->
+
+<div class="credit">
+    <a href="http://enchantedthemes.tumblr.com" title="alydae">A.</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<head>
+ 
+<!--
+ 
+    BLOGROLL I - REVAMP (updated 8/1/19)
+        by alydae
+        
+            - do not steal any part of this code
+            - do not even TOUCH the credit
+            - since tumblr's update, please read this before asking anything 
+			https://enchantedthemes.tumblr.com/post/181830382151/blogrolls-not-showing-fix
+            - direct questions to enchantedthemes.tumblr.com
+            - base code by salazhar/azurethemes
+ 
+-->
+ 
+<title>blogroll i</title>
+<link rel="shortcut icon" href="{Favicon}">
+
+<!-- scripts - DO NOT TOUCH -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script src="https://static.tumblr.com/rzl30kg/eAxm7a751/jquery.style-my-tooltips.js"></script>
+<script>
+   (function($){
+       $(document).ready(function(){
+           $("[title]").style_my_tooltips({
+               tip_follows_cursor:true,
+               tip_delay_time:200,
+               tip_fade_speed:300
+           }
+               );
+       });
+   })(jQuery);
+</script>
+
+<!-- custom font -->
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'> 
+
+<script src="https://kit.fontawesome.com/4fe045a39a.js" crossorigin="anonymous"></script>
+ 
+
+<style type="text/css">
+
+@keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+/*-- selection --*/
+
+::-moz-selection { background:#eee; color:#222; }
+::selection { background:#eee; color:#222; }
+
+/*-- scrollbar --*/
+
+::-webkit-scrollbar {  
+    width:1px;  
+    height:2px;
+}  
+   
+::-webkit-scrollbar-thumb { background-color:#aaa; } /* scrollbar colour */
+ 
+/*-- tooltips --*/
+
+#s-m-t-tooltip {
+    color:#666;
+    background-color:#fff; 
+    font-size:8px;
+    font-family:'Open Sans', helvetica, sans-serif;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    text-align:center;
+    position:absolute;
+    padding:0px 5px 0px 5px;
+    margin-top:30px;
+    border:1px solid #eee;
+    z-index:9999;
+}
+
+/*-- tumblr controls --*/
+
+.tmblr-iframe, .iframe-controls–desktop {
+    display:none !important;
+}
+
+/*-- general customisation --*/
+
+a, a:hover, #content img, #content img:hover {
+    transition-duration: 0.6s;  
+    -moz-transition-duration: 0.6s;  
+    -webkit-transition-duration: 0.6s;  
+    -o-transition-duration: 0.6s;
+    -ms-transition-duration: 0.6s;    
+}
+
+body { 
+    font-style:normal; 
+    font-family:'Open Sans', helvetica, sans-serif; 
+    font-size:10px; 
+    font-weight:400;
+    text-decoration:none; 
+    line-height:180%; 
+    background-color:#fafafa;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    -webkit-animation: fadein 1.5s;
+    -moz-animation: fadein 1.5s;
+    -o-animation: fadein 1.5s; 
+    animation: fadein 1.5s;
+}
+
+a {
+    text-transform:uppercase;
+    text-decoration:none;
+    letter-spacing:0.5px;
+    font-size:10px;
+    font-weight:400;
+    color:#444; /*links colour*/
+}   
+    
+a:hover {
+    color:#bad0f1; /* links hover colour */
+    cursor:pointer;
+    transition-duration: 0.6s;  
+    -moz-transition-duration: 0.6s;  
+    -webkit-transition-duration: 0.6s;  
+    -o-transition-duration: 0.6s;
+}
+
+/*-- container --*/
+
+#entire {
+    line-height:50px;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:calc(2px + (20px + 45px) * 10  + 20px);
+    /* * 10 is where you change the number of blogs shown in a row */
+    height:420px;
+}
+
+/*-- header --*/
+
+#header {
+    background:#fff; /* background colour */
+    height:50px;
+    margin:auto;
+    margin-bottom:10px;
+    border:1px solid #eee; /* border colour */
+}
+
+.title {
+    margin-left:20px;
+    float:left;
+    text-transform:uppercase;
+    font-size:12px;
+    line-height:50px;
+    font-weight:bold;
+    letter-spacing:1px;
+    color:#222; /* title colour */
+}
+
+.links {
+    margin-right:20px;
+    float:right;
+    position:relative;
+    line-height:50px;
+}
+
+.links a { 
+    margin-left:7.5px;    
+    text-transform:uppercase;
+    font-size:9px;
+    font-weight:600;
+    letter-spacing:0.75px; 
+}
+
+/*-- blogs --*/
+
+#content {
+    position:relative;
+    width:calc(2px + (20px + 45px) * 10);
+    /* * 10 is where you change the number of blogs shown in a row. if you changed the top one, you need to change this one too. */
+    max-height:350px;
+    overflow-x:hidden;
+    overflow-y:scroll;
+    margin:0px auto;
+    padding:10px;
+    background:#fff; 
+    border:1px solid #eee; /*border colour*/
+}
+ 
+#content img {
+    margin:10px 10px -5px 10px;
+    width:45px;
+    -webkit-filter: grayscale(60%);
+    -moz-filter: grayscale(60%);
+    -o-filter: grayscale(60%);
+    -ms-filter: grayscale(60%);
+}
+
+#content img:hover {
+    border-radius:50%;
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+}
+
+/*-- credit - DO NOT TOUCH --*/
+
+.credit a {
+    font-size:10px;
+    bottom:15px;
+    right:20px;
+    position:fixed;
+}
+ 
+</style>
+</head>
+
+
+<body>
+
+<div id="entire">
+ 
+<div id="header">
+    <div class="title">blogroll</div><!-- title -->
+    <div class="links">
+	<!-- this is where your header links are. feel free to add more. -->
+        <a href="/">home</a>
+        <a href="/ask">ask</a>
+        <a href="/">link</a>
+		<!-- do not remove this one!!! -->
+        <a href="http://enchantedthemes.tumblr.com">credit</a>  
+    </div>
+</div>
+
+<div id="content">
+{block:Following}{block:Followed}<a href="{FollowedURL}" title="{FollowedName}"><img src="{FollowedPortraitURL-128}"/></a>{/block:Followed}{/block:Following}
+</div>
+
+</div>
+
+
+<!-- credit - DO NOT TOUCH -->
+
+<div class="credit">
+    <a href="http://enchantedthemes.tumblr.com" title="alydae">A.</a>
+</div>
+
+
+</body>
+</html>

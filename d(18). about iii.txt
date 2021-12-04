@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<head>
+ 
+<!--
+ 
+    ABOUT III 
+        by alydae
+        
+            - do not steal any part of this code
+            - do not even TOUCH the credit
+            - direct questions to enchantedthemes.tumblr.com
+            
+    thank you for using!!!
+ 
+-->
+ 
+ 
+<title>about</title>
+<link rel="shortcut icon" href="{Favicon}">
+ 
+<!-- scripts - DO NOT TOUCH -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script src="http://static.tumblr.com/rzl30kg/eAxm7a751/jquery.style-my-tooltips.js"></script>
+<script>
+   (function($){
+       $(document).ready(function(){
+           $("[title]").style_my_tooltips({
+               tip_follows_cursor:true,
+               tip_delay_time:200,
+               tip_fade_speed:300
+           }
+               );
+       });
+   })(jQuery);
+</script>
+
+<!-- custom font -->
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'> 
+
+<script src="https://kit.fontawesome.com/4fe045a39a.js" crossorigin="anonymous"></script>
+ 
+ 
+<style type="text/css">
+
+@keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+/*-- selection --*/
+
+::-moz-selection { background:#eee; color:#222; }
+::selection { background:#eee; color:#222; }
+
+/*-- scrollbar --*/
+
+::-webkit-scrollbar {  
+    width:1px;  
+    height:2px;
+}  
+   
+::-webkit-scrollbar-thumb { background-color:#aaa; } /* scrollbar colour */
+ 
+/*-- tooltips --*/
+
+#s-m-t-tooltip {
+    color:#666;
+    background-color:#fafafa;
+    font-size:8px;
+    font-family:'Open Sans', helvetica, sans-serif;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    text-align:center;
+    position:absolute;
+    padding:0px 5px 0px 5px;
+    margin-top:30px;
+    border:1px solid #eee;
+    z-index:9999;
+}
+
+/*-- tumblr controls --*/
+
+.tmblr-iframe, .iframe-controls–desktop {
+    display:none !important;
+}
+
+/*-- transitions --*/
+
+a, a:hover, #blogs li, #blogs li:hover, #social i, #social i:hover {
+    transition-duration: 0.6s;  
+    -moz-transition-duration: 0.6s;  
+    -webkit-transition-duration: 0.6s;  
+    -o-transition-duration: 0.6s;    
+}
+
+/*-- general customisation --*/
+
+body {
+    color:#666; /* text colour */
+    background-color:#fff; /* background colour */
+    font-style:normal; 
+    font-family:'Open Sans', helvetica, sans-serif; 
+    font-size:10px; 
+    font-weight:400;
+    text-decoration:none; 
+    line-height:180%; 
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    -webkit-animation: fadein 1.5s;
+    -moz-animation: fadein 1.5s;
+    -o-animation: fadein 1.5s; 
+    animation: fadein 1.5s;
+}
+
+a {
+    text-decoration:none;
+    color:#444; /* links colour */
+}   
+    
+a:hover {
+    color:#bad1e7; /* links hover colour */
+    cursor:pointer;
+}
+
+b, strong { font-weight:600; color:#444; } /* bold font colour */
+i, em { font-style:italic; }
+
+blockquote {
+    padding-left:10px;
+    margin:0;
+    border-left:1px solid #eee;
+}
+
+h1 {
+    text-transform:uppercase!important;
+    text-align:center;
+    font-weight:bold;
+    font-size:12px;
+    letter-spacing:1px;
+    color:#222; /* subtitles colour */
+    margin-top:10px;
+}
+
+/*-- container --*/
+
+container {
+    position:fixed;
+    width:750px;
+    height:500px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+/*-- header --*/
+
+#header {
+    position:relative;
+    height:50px;
+    width:100%;
+    border-bottom:1px solid #eee;
+}
+
+#header img {
+    position:relative;
+    width:30px;
+    height:30px;
+    margin:10px 15px 10px 15px;
+}
+
+.title {
+    position:absolute;
+    display:inline;
+    top:15px;
+    text-transform:uppercase;
+    font-weight:700;
+    font-size:14px;
+    line-height:20px;
+    letter-spacing:1px;
+    color:#222; /* page title colour */
+}
+
+.navi { 
+    position:absolute;
+    display:inline;
+    right:15px;
+}
+
+.navi a {
+    line-height:50px;
+    margin-left:5px;
+    margin-right:5px;
+    text-transform:uppercase;
+    font-size:9.5px;
+    letter-spacing:0.5px;
+}
+
+/*-- links --*/
+
+#links {
+    height:35px;
+    width:100%;
+    line-height:35px;
+    text-align:center;
+    border-bottom:1px solid #eee;
+}
+
+#links a {
+    margin-left:7.5px;
+    margin-right:7.5px;
+    font-style:italic;
+    font-size:11px;
+}
+
+/*-- info --*/
+
+#info { width:200px; margin-right:15px; }
+
+#info ul li { list-style:none; margin-left:-40px; }
+
+#info li {
+    width:170px;
+    padding:5px 10px 5px 10px;
+    margin:5px 0 5px;
+    text-align:right;
+    background:#fafafa; /* info background colour */
+    border-bottom:1px solid #eee;
+}
+
+#info h2 {
+    display:inline;
+    margin:0;
+    text-transform:uppercase!important;
+    float:left!important;
+    font-size:10px;
+    font-style:italic;
+    font-weight:400;
+    letter-spacing:0.5px;
+    color:#444; /* title colour */
+}
+
+/*-- about --*/
+
+#about {
+    position:absolute;
+    left:200px;
+    top:87px;
+    width:310px;
+    height:382px;
+    margin:0 5px 0 5px;
+    padding:15px;
+    overflow-y:scroll;
+    border-left:1px solid #eee;
+    border-right:1px solid #eee;
+}
+
+/*-- blogs --*/
+
+#blogs {
+    position:absolute;
+    right:0;
+    top:87px;
+    width:200px;
+    margin-left:15px;
+}
+
+#blogs ul li { list-style:none; margin-left:-30px; }
+#blogs ul { margin:0; }
+
+#blogs li {
+    width:185px;
+    padding:0;
+    margin-bottom:7px;
+    line-height:30px!important;
+    text-align:left;
+    background:#fafafa; /* blogs background colour */
+    border-bottom:1px solid #eee;
+    padding-right:5px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+#blogs li:hover { background:#fff; } /* colour on hover */
+#blogs li:last-of-type { margin-bottom:0!important; }
+
+#blogs img {
+    height:30px;
+    width:30px;
+    margin-right:7px;
+    margin-bottom:0;
+    display:inline;
+    float:left;
+}
+
+#blogs h3 {
+    display:inline;
+    margin-right:3px;
+    text-transform:uppercase!important;
+    font-size:9px;
+    font-style:italic;
+    font-weight:400;
+    letter-spacing:0.5px;
+    color:#444; /* title colour */
+}
+
+#blogs h3:after { content:';'; }
+
+/*-- social --*/
+
+#social {
+    position:absolute;
+    right:0px;
+    top:360px;
+    width:122px;
+    padding:5px 40px 15px 40px;
+    text-align:center;
+    border-top:1px solid #eee;
+}
+
+#social i {
+    font-size:16px;
+    padding:7px;
+    margin:2px;
+    background:#fafafa; /* social background colour */
+    border-bottom:1px solid #eee;
+}
+
+#social i:hover { background:#fff; } /* colour on hover */
+    
+/*-- credit - DO NOT TOUCH --*/
+
+.credit a {
+    font-size:10px;
+    bottom:15px;
+    right:20px;
+    position:fixed;
+    text-transform:uppercase;
+}
+
+</style>
+</head>
+
+
+
+<body>
+
+
+<container>
+    
+<div id="header">
+    <!-- the default is your icon. if you want to change it, remove {PortraitURL-128} and replace it with the image url of the one you want. -->
+    <img src="{PortraitURL-128}"/>
+    <div class="title">about</div><!-- title -->
+    <div class="navi">
+    <!-- these are your header links. feel free to add more. -->
+        <a href="/">index</a>
+        <a href="/ask">message</a>
+        <a href="/archive">archive</a>
+    </div>
+</div>
+
+
+<div id="links">
+<!-- feel free to add more! -->
+    <a href="">i. link</a>
+    <a href="">ii. link</a>
+    <a href="">iii. link</a>
+    <a href="">iv. link</a>
+</div>
+
+
+<div id="info">
+<h1>the blogger</h1> <!-- title -->
+<ul>
+<!-- template: <li><h2>subject:</h2> content</li> -->
+    <li><h2>subject:</h2> content</li>
+    <li><h2>subject:</h2> content</li>
+    <li><h2>subject:</h2> content</li>
+    <li><h2>subject:</h2> content</li>
+    <li><h2>subject:</h2> content</li>
+    <li><h2>subject:</h2> content</li>
+    <li><h2>subject:</h2> content</li>
+    <li><h2>subject:</h2> content</li>
+    <li><h2>subject:</h2> content</li>
+    <li><h2>subject:</h2> content</li>
+</ul>
+</div>
+
+
+<div id="about">
+<!-- this is where you about text goes -->
+    this is where you put the body of your about. you can use <b>bold</b>, <i>italics</i>, <big>big</big>, <small>small</small>, <s>strikethroughs</s>, <a href="/">links</a> as well as
+    <blockquote>blockquotes</blockquote>
+
+    <p>there is no limit as it will scroll automatically. remember to close paragraphs! <s>and now for some dummy text</s> </p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac consequat odio, sagittis ultricies dolor. Praesent molestie et tortor eu rhoncus. Sed tristique, sapien eu posuere vulputate, metus nisl aliquam diam, id vulputate ipsum velit quis nisi. Sed nec eros risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum a diam faucibus, tincidunt libero nec, tincidunt mauris. Maecenas semper in dui ac dapibus. Nunc et mollis diam, eget porttitor felis. Suspendisse interdum porta pretium. Nulla facilisi. Curabitur sagittis, massa id ultricies euismod, purus sapien pellentesque leo, quis ultricies mauris dolor et urna. Quisque malesuada ante nec vestibulum tempor. Quisque lobortis est ac finibus pretium. Maecenas quis hendrerit quam, bibendum finibus sem. Integer imperdiet odio eu elementum interdum.</p>
+
+</p>Fusce sed mi id lectus maximus ornare. Pellentesque venenatis pretium erat, non laoreet erat cursus et. In id dapibus arcu, at interdum augue. Nunc porta hendrerit semper. Vestibulum eu sapien sed sapien posuere porta. Duis iaculis volutpat leo sit amet euismod. Quisque vulputate aliquam congue. Sed pretium a nibh ultrices aliquam. Vestibulum mattis libero quam.</p>
+<!-- end about text -->
+</div>
+
+
+<div id="blogs">
+<h1>friends</h1> <!-- title -->
+<div style="height:228px; overflow-y:scroll; overflow-x:hidden!important;">
+<ul>
+<!-- 
+you can use this section for friends or your own personal blogs etc.
+
+template:
+<li>
+    <img src="IMAGE URL"/>
+    <h3><a href="LINK">@url</a></h3>
+    [optional] name
+</li>
+-->
+<li>
+    <img src="IMAGE URL"/>
+    <h3><a href="LINK">@url</a></h3>
+    [optional] name
+</li>
+<li>
+    <img src="IMAGE URL"/>
+    <h3><a href="LINK">@url</a></h3>
+    [optional] name
+</li>
+<li>
+    <img src="IMAGE URL"/>
+    <h3><a href="LINK">@url</a></h3>
+    [optional] name
+</li>   
+<li>
+    <img src="IMAGE URL"/>
+    <h3><a href="LINK">@url</a></h3>
+    [optional] name
+</li>  
+<li>
+    <img src="IMAGE URL"/>
+    <h3><a href="LINK">@url</a></h3>
+    [optional] name
+</li>   
+<li>
+    <img src="IMAGE URL"/>
+    <h3><a href="LINK">@url</a></h3>
+    [optional] name
+</li> 
+<li>
+    <img src="IMAGE URL"/>
+    <h3><a href="LINK">@url</a></h3>
+    [optional] name
+</li> 
+</ul>
+</div>
+</div>
+
+<div id="social">
+<h1>social media</h1><!-- title -->
+<div style="height:70px; overflow-y:scroll; overflow-x:hidden!important;">
+<!-- 
+between the "" is where you put a link to your account. to change the icon, go to https://fontawesome.com/icons. leave the 'fa-fw' there.
+replace the LINK in title="LINK" for what you want it to show on hover.
+
+template:
+    <a href="" title="LINK">
+        [ICON CODE]
+    </a>
+-->
+    <a href="" title="LINK">
+        <i class="fab fa-twitter fa-fw"></i>
+    </a>
+    <a href="" title="LINK">
+        <i class="fab fa-instagram fa-fw"></i>
+    </a>
+    <a href="" title="LINK">
+        <i class="fab fa-snapchat-ghost fa-fw"></i>
+    </a>
+    <a href="" title="LINK">
+        <i class="fab fa-goodreads fa-fw"></i>
+    </a>
+    <a href="" title="LINK">
+        <i class="fab fa-pinterest-p fa-fw"></i>
+    </a>
+    <a href="" title="LINK">
+        <i class="fas fa-heart fa-fw"></i>
+    </a>
+</div>
+</div>
+
+</container>
+
+
+<!-- credit - DO NOT TOUCH -->
+
+<div class="credit">
+    <a href="https://enchantedthemes.tumblr.com" title="alydae">A.</a>
+</div>
+
+
+</body>
+</html>

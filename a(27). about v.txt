@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<head>
+ 
+<!--
+ 
+    ABOUT V
+        by alydae
+        
+            - do not steal any part of this code
+            - do not even TOUCH the credit
+            - direct questions to enchantedthemes.tumblr.com
+            
+    thank you for using!!!
+ 
+-->
+ 
+<title>about</title>
+<link rel="shortcut icon" href="{Favicon}">
+ 
+<!-- scripts - DO NOT TOUCH -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script src="https://static.tumblr.com/rzl30kg/eAxm7a751/jquery.style-my-tooltips.js"></script>
+<script>
+   (function($){
+       $(document).ready(function(){
+           $("[title]").style_my_tooltips({
+               tip_follows_cursor:true,
+               tip_delay_time:200,
+               tip_fade_speed:300
+           }
+               );
+       });
+   })(jQuery);
+</script>
+
+<!-- custom font -->
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'> 
+
+<script src="https://kit.fontawesome.com/4fe045a39a.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+ 
+ 
+<style type="text/css">
+
+@keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+/*-- selection --*/
+
+::-moz-selection { background:#eee; color:#222; }
+::selection { background:#eee; color:#222; }
+
+/*-- scrollbar --*/
+
+::-webkit-scrollbar {  
+    width:1px;  
+    height:2px;
+}  
+   
+::-webkit-scrollbar-thumb { background-color:#aaa; } /* scrollbar colour */
+ 
+/*-- tooltips --*/
+
+#s-m-t-tooltip {
+    color:var(--text);
+    background-color:var(--accent); 
+    font-size:8px;
+    font-family:'Open Sans', helvetica, sans-serif;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    text-align:center;
+    position:absolute;
+    padding:0px 5px 0px 5px;
+    margin-top:30px;
+    border:1px solid var(--borders);
+    z-index:9999;
+}
+
+/*-- tumblr controls --*/
+
+.tmblr-iframe, .iframe-controls–desktop {
+    display:none !important;
+}
+
+/*-- common --*/
+
+a, a:hover, .social i, .social a:hover i {
+    transition-duration: 0.6s;  
+    -moz-transition-duration: 0.6s;  
+    -webkit-transition-duration: 0.6s;  
+    -o-transition-duration: 0.6s;
+}
+
+/*-- colours - change all colours here --*/
+
+:root {
+    --background:#fff;
+    --accent:#fafafa;
+    --text:#666;
+    --links:#444;
+    --links-hover:#bad0f1;
+    --title:#222;
+    --borders:#eee;
+}
+
+/*-- general customisation --*/
+
+body {
+    color:var(--text);
+    background:var(--background);
+    font-style:normal; 
+    font-family:'Open Sans', helvetica, sans-serif; 
+    font-size:10px; 
+    font-weight:400;
+    text-decoration:none; 
+    line-height:180%; 
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    -webkit-animation: fadein 1.5s;
+    -moz-animation: fadein 1.5s;
+    -o-animation: fadein 1.5s; 
+    animation: fadein 1.5s;
+}
+
+a { text-decoration:none; color:var(--links); }   
+a:hover { color:var(--links-hover); cursor:pointer; }
+
+b, strong { font-weight:600; color:#444; }
+i, em { font-style:italic; }
+
+blockquote {
+    padding-left:10px;
+    margin:0;
+    border-left:1px solid var(--borders);
+}
+
+
+/*-- container --*/
+
+container {
+    position:fixed;
+    width:700px;
+    height:auto;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+/*-- topbar --*/
+
+#topbar {
+    position:relative;
+    width:100%;
+    height:50px;
+    border:1px solid transparent;
+}
+
+#topbar img { 
+    float:left;
+    width:40px; 
+    height:40px; 
+    border-radius:100%; 
+    padding:3px;
+    border:1px solid var(--borders);
+}
+
+.nav { line-height:50px; }
+.nav a { font-style:italic; margin-left:15px; }
+.nav i, .t i { padding-right:7px; color:var(--links-hover); }
+
+.nav:before {
+    content:"";
+    float:left;
+    margin:25px 0px 25px 10px;
+    height:1px;
+    width:75px;
+    background:var(--borders);
+}
+
+/*-- title --*/
+
+#title {
+    position:absolute;
+    margin-top:65px;
+    margin-left:-55px;
+    line-height:50px;
+    transform:rotate(-90deg);
+    text-transform:uppercase;
+    font-size:16px;
+    font-weight:bold;
+    letter-spacing:2px;
+    color:var(--title);
+}
+
+#title:before {
+    content:"";
+    float:right;
+    margin:25px 0px 25px 10px;
+    height:1px;
+    width:75px;
+    background:var(--borders);
+}
+
+/*-- main section --*/
+
+#main { 
+    position:relative;
+    margin-left:60px;
+    padding:10px 15px;
+    width:auto;
+    max-height:210px;
+    overflow-y:scroll;
+    background:var(--accent);
+    border:1px solid var(--borders);
+}
+
+
+/*-- bottom boxes --*/
+
+.box {
+    float:left;
+    padding-right:25px;
+    margin-right:25px;
+    margin-top:25px;
+    width:calc((700px - 52px * 2) / 3);
+    /* (container width - (2*margin + 2) * one less than the number of boxes) / the number of boxes */ 
+    height:155px;
+    border-right:1px solid var(--borders);
+}
+
+.box:first-of-type { margin-left:0px!important; }
+.box:last-of-type { padding-right:0; margin-right:0; border:none; }
+
+.box h1 {
+    display:inline-block;
+    text-transform:uppercase;
+    color:var(--links);
+    font-size:11px;
+    letter-spacing:1.5px;
+    padding:3px 7px;
+    margin:0px 20px 10px 0px;
+    background:var(--accent);
+    border:1px solid var(--borders);
+}
+
+.t {
+    display:block;
+    margin-top:5px;
+    height:115px;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+
+.t ul { margin-top:0px; margin-bottom:0px; }
+.t ul li { list-style:none; margin-left:-40px; }
+.t li { width:195px; padding-bottom:5px; } /* width is slightly smaller than the value you get from the .box width */
+.t li:last-of-type { padding-bottom:0; }
+
+.t h2 {
+    display:inline;
+    margin:0;
+    text-transform:uppercase!important;
+    font-size:9.5px;
+    font-weight:700;
+    letter-spacing:1px;
+    color:var(--title);
+    margin-right:5px;
+}
+
+.social { text-align:right; }
+
+.social i { 
+    font-size:16px;
+    width:16px;
+    margin-bottom:9px;
+    margin-right:9px;
+    padding:10px;
+    border-radius:100%;
+    border:1px solid var(--borders);
+}
+
+.social a:hover i { color:var(--links); background:var(--accent); }
+
+/*-- credit - DO NOT TOUCH --*/
+
+.credit a {
+    font-size:10px;
+    bottom:15px;
+    right:20px;
+    position:fixed;
+    text-transform:uppercase;
+}
+
+</style>
+</head>
+
+
+
+<body>
+
+<container>
+    
+<div id="topbar">
+    <img src="{PortraitURL-128}"/><!-- default is your icon. if you want to change it, remove {PortraitURL-128} and replace it with the image url of the one you want -->
+    <div class="nav">
+    <!-- feel free to add more! if you don't want the icon, just remove the <i class> section. to change the icon, go to https://fontawesome.com/icons. -->
+        <a href="/"><i class="fas fa-home"></i>index</a>
+        <a href="/ask"><i class="fas fa-envelope"></i>message</a>
+        <a href=""><i class="fas fa-star"></i>link</a>
+        <a href=""><i class="fas fa-bars"></i>link</a>
+    </div>
+</div><!-- end topbar -->
+ 
+<div id="title">about</div><!-- title - this has to be a single word or else it will break the page! -->    
+
+
+
+<div id="main">
+<!-- this is where you about text goes -->
+    this is where you put the body of your about. you can use <b>bold</b>, <i>italics</i>, <big>big</big>, <small>small</small>, <s>strikethroughs</s>, <a href="/">links</a> as well as
+    <blockquote>blockquotes</blockquote>
+
+    <p>there is no limit as it will scroll automatically. remember to close paragraphs! <s>and now for some dummy text</s> </p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac consequat odio, sagittis ultricies dolor. Praesent molestie et tortor eu rhoncus. Sed tristique, sapien eu posuere vulputate, metus nisl aliquam diam, id vulputate ipsum velit quis nisi. Sed nec eros risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+    
+    <p>Vestibulum a diam faucibus, tincidunt libero nec, tincidunt mauris. Maecenas semper in dui ac dapibus. Nunc et mollis diam, eget porttitor felis. Suspendisse interdum porta pretium. Nulla facilisi. Curabitur sagittis, massa id ultricies euismod, purus sapien pellentesque leo, quis ultricies mauris dolor et urna. Quisque malesuada ante nec vestibulum tempor. Quisque lobortis est ac finibus pretium. Maecenas quis hendrerit quam</p>
+<!-- end about text -->
+</div><!-- end main -->
+
+
+
+<!-- THE BOXES
+
+template for a new box:
+<div class="box">
+    <h1>subtitle</h1>
+    <div class="t">
+    </div>
+</div>
+
+the boxes are identical in size to each other. you can move them around, delete them all or you can change the number. earlier in the code, under .box, there's instructions on changing the number of boxes. 2-4 is recommended, and only 4 for little content. 
+
+you can have anything in here and the content will scroll. the examples are social media links and lists. the lists can have an optional icon in front of them. to have the social media section, add 'social' to the class to get 
+    <div class="t social">
+
+template for a new social media link:
+    <a href="[link]" title="[optional hover title]"><i class="[icon name] fa-fw"></i></a>
+    
+template for a new list:
+    <li><i class="[icon name] fa-fw"><h2></i>subject:</h2> content</li>
+    or
+    <li><h2>subject:</h2> content</li>
+
+to change the icon, go to https://fontawesome.com/icons. keep the fa-fw at the end to align them all. 
+
+-->
+
+<div class="box">
+    <h1>subtitle</h1>
+    <div class="t social">
+    <a href="" title=""><i class="fab fa-twitter fa-fw"></i></a>
+    <a href="" title=""><i class="fab fa-instagram fa-fw"></i></a>
+    <a href="" title=""><i class="fab fa-snapchat-ghost fa-fw"></i></a>
+    <a href="" title=""><i class="fab fa-discord fa-fw"></i></a>
+    <a href="" title=""><i class="fab fa-goodreads-g fa-fw"></i></a>
+    <a href="" title=""><i class="fab fa-pinterest-p fa-fw"></i></a>
+    <a href="" title=""><i class="fas fa-heart fa-fw"></i></a>
+    </div>
+</div><!-- end box -->
+
+
+<div class="box">
+    <h1>subtitle</h1>
+    <div class="t">
+    <ul>
+        <li><h2>subject:</h2> content</li>
+        <li><h2>subject:</h2> content</li>
+        <li><h2>subject:</h2> content</li>
+        <li><h2>subject:</h2> content</li>
+        <li><h2>subject:</h2> content</li>
+    </ul>
+    </div>
+</div><!-- end box -->
+
+
+<div class="box">
+    <h1>subtitle</h1>
+    <div class="t">
+    <ul>
+        <li><i class="fas fa-book fa-fw"></i><h2>subject:</h2> content</li>
+        <li><i class="fas fa-film fa-fw"></i><h2>subject:</h2> content</li>
+        <li><i class="far fa-moon fa-fw"></i><h2>subject:</h2> content</li>
+        <li><i class="fas fa-code fa-fw"></i><h2>subject:</h2> content</li>
+        <li><i class="fas fa-crop fa-fw"></i><h2>subject:</h2> content</li>
+    </ul>
+</div>
+</div><!-- end box -->
+
+
+
+</container>
+
+
+<!-- credit - DO NOT TOUCH -->
+
+<div class="credit">
+    <a href="http://enchantedthemes.tumblr.com" title="alydae">A.</a>
+</div>
+
+
+</body>
+</html>

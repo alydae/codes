@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<head>
+ 
+<!--
+ 
+    NETWORK I (updated 19/1/19)
+        by alydae
+        
+            - do not steal any part of this code
+            - do not even TOUCH the credit
+            - direct questions to enchantedthemes.tumblr.com
+            
+        if you want to add filters to this page, go to
+        http://enchantedthemes.tumblr.com/networks/filters
+            
+    thank you for using!!!
+ 
+-->
+ 
+<title>members</title>
+<link rel="shortcut icon" href="{Favicon}">
+ 
+<!-- scripts - DO NOT TOUCH -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script src="https://static.tumblr.com/rzl30kg/eAxm7a751/jquery.style-my-tooltips.js"></script>
+<script>
+   (function($){
+       $(document).ready(function(){
+           $("[title]").style_my_tooltips({
+               tip_follows_cursor:true,
+               tip_delay_time:200,
+               tip_fade_speed:300
+           }
+               );
+       });
+   })(jQuery);
+</script>
+
+<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
+<script>
+$(window).load(function () {
+    $('#content').masonry({
+        itemSelector : ".box",
+    });
+});
+</script>
+
+<!-- custom font -->
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'> 
+ 
+ 
+<style type="text/css">
+
+@keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+/*-- selection --*/
+
+::-moz-selection { background:#eee; color:#222; }
+::selection { background:#eee; color:#222; }
+
+/*-- scrollbar --*/
+
+::-webkit-scrollbar {  
+    width:2px;  
+    height:2px;
+}  
+   
+::-webkit-scrollbar-thumb { background-color:#aaa; } /* scrollbar colour */
+ 
+/*-- tooltips --*/
+
+#s-m-t-tooltip {
+    color:#666;
+    background-color:#fff; 
+    font-size:8px;
+    font-family:'Open Sans', helvetica, sans-serif;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    text-align:center;
+    position:absolute;
+    padding:0px 5px 0px 5px;
+    margin-top:30px;
+    border:1px solid #eee;
+    z-index:9999;
+}
+
+/*-- tumblr controls --*/
+
+.tmblr-iframe, .iframe-controls–desktop {
+    display:none !important;
+}
+
+/*-- hover animation --*/
+
+a, a:hover, .overlay, .show, .box:hover .show {
+    transition-duration: 0.6s;  
+    -moz-transition-duration: 0.6s;  
+    -webkit-transition-duration: 0.6s;  
+    -o-transition-duration: 0.6s;
+}
+
+/*-- general customisation --*/
+
+body {
+    color:#666; /* text colour */
+    background-color:#fafafa; /* background colour */
+    font-style:normal; 
+    font-family:'Open Sans', helvetica, sans-serif; 
+    font-size:10px; 
+    font-weight:400;
+    text-decoration:none; 
+    line-height:180%; 
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    -webkit-animation: fadein 1.5s;
+    -moz-animation: fadein 1.5s;
+    -o-animation: fadein 1.5s; 
+    animation: fadein 1.5s;
+}
+
+a {
+    text-decoration:none;
+    color:#444; /* links colour */
+}   
+    
+a:hover {
+    color:#bad1e7; /* links hover colour */
+    cursor:pointer;
+}
+
+b, strong { font-weight:700; color:#444; }
+i, em { color:#444; font-style:italic; }
+
+/*-- header --*/
+
+#topbar {
+    position:fixed;
+    top:0;
+	left:0;
+    width:100vw;
+    background:#fff;
+    border-bottom:1px solid #eee;
+    z-index:99999;
+}
+
+#header {
+    position:relative;
+    width:250px; /* header info width */
+    margin:80px auto;
+    z-index:999999;
+}
+
+.icon {
+    top:50%;
+    transform:translateY(-46%);
+    position:absolute;
+}
+
+.icon img {
+    height:50px;
+    width:50px;
+    border-radius:100%;
+}
+
+.title {
+    position:relative;
+    margin-left:70px;
+    text-transform:uppercase;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:1px;
+    color:#222; /* title colour */
+}
+
+.links { margin:5px 0px 0px 70px; }
+
+.links a {
+    display:inline;
+    padding-right:10px;
+    letter-spacing:0.5px;
+    text-transform:uppercase;
+}
+
+/*-- members --*/
+
+#content {
+    position:relative;
+    margin:275px auto 100px auto;
+    width:calc((125px + 40px + 2px) * 4); 
+    /* ((image width + 2*margin + 2*border width) * number of columns) */
+}
+
+.box {
+    position:block;
+    margin:20px;
+    height:158px; /* image height + 33px */
+    width:125px; /* image width */
+    float:left;
+    background:#fff;
+    border:1px solid #eee;
+}
+
+.box h1 {
+    position:relative;
+    text-transform:uppercase;
+    text-align:center;
+    font-weight:600;
+    font-size:11px;
+    letter-spacing:0.5px;
+    color:#444; /* box name colour */
+}
+
+.box img {
+    position:relative;
+    width:125px; /* image width */
+    height:125px; /* image height */
+}
+
+.overlay {
+    position:absolute;
+    top:33px;
+    left:0;
+    width:100%;
+    height:125px; /* image height */
+    opacity:0;
+    background:rgba(255,255,255,0.95);
+    z-index:999;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+
+.box:hover .overlay { opacity:1; }
+ 
+.desc {
+    position:relative;
+    top:50%;
+    left:50%;
+    padding:0px 15px 0px 15px;
+    line-height:160%;
+    text-align:center;
+    text-transform:lowercase;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    transform:translate(-50%, -50%);
+}
+
+.show {
+    position:absolute;
+    margin-top:-34px;
+    height:33px;
+    width:100%;
+    text-align:center;
+    line-height:33px;
+    font-style:italic;
+    font-size:11px;
+    opacity:0;
+    background-color:#fff; /* background colour upon hover */
+    border-top:1px solid #eee;
+}
+
+.box:hover .show { opacity:1; margin-top:-34px; }
+
+
+/*-- credit - DO NOT TOUCH --*/
+
+.credit a {
+    font-size:10px;
+    bottom:15px;
+    right:20px;
+    position:fixed;
+    text-transform:uppercase;
+}
+
+
+</style>
+</head>
+
+
+<body>
+
+<div id="topbar">
+
+<div id="header">
+    <!-- the blog icon is the default. if you want to change it, replace {PortraitURL-128} with the image url of choice -->
+    <div class="icon"><img src="{PortraitURL-128}"/></div>
+    <div class="title">members</div> <!-- title -->
+    <div class="links">
+    <!-- this is where your header links are. feel free to add more. -->
+        <a href="/">home</a>
+        <a href="/ask">ask</a>
+        <a href="">link</a>
+        <!-- do not remove this one!!! -->
+        <a href="http://enchantedthemes.tumblr.com">credit</a>
+    </div>
+</div>
+
+</div>
+
+
+<div id="content">
+
+<!-- BOX CUSTOMISATION
+
+template:
+<div class="box">
+    <h1>name</h1>
+    <div class="show"><a href="">url</a></div>
+    <img src=""/>
+    <div class="overlay">
+        <div class="desc">desc</div>
+    </div>
+</div>
+
+if the text on hover is too long and it scrolls, you'll need to change <div class="desc"> to <div class="desc" style="height:95px">.
+
+if you do not want the text on hover, just delete these lines.
+    <div class="overlay">
+        <div class="desc">desc</div>
+    </div>
+    
+if you do not want an image and overlay, delete these lines.
+    <img src=""/>
+    <div class="overlay">
+        <div class="desc">desc</div>
+    </div>
+    
+-->
+
+<div class="box">
+    <h1>name</h1>
+    <div class="show"><a href="">url</a></div>
+    <img src=""/>
+    <div class="overlay">
+        <div class="desc">desc</div>
+    </div>
+</div>
+
+<div class="box">
+    <h1>name</h1>
+    <div class="show"><a href="">url</a></div>
+    <img src=""/>
+    <div class="overlay">
+        <div class="desc">desc</div>
+    </div>
+</div>
+
+<div class="box">
+    <h1>name</h1>
+    <div class="show"><a href="">url</a></div>
+    <img src=""/>
+    <div class="overlay">
+        <div class="desc">desc</div>
+    </div>
+</div>
+
+<div class="box">
+    <h1>name</h1>
+    <div class="show"><a href="">url</a></div>
+    <img src=""/>
+    <div class="overlay">
+        <div class="desc">desc</div>
+    </div>
+</div>
+
+</div>
+
+
+<!-- credit - DO NOT TOUCH -->
+
+<div class="credit">
+    <a href="http://enchantedthemes.tumblr.com" title="alydae">A.</a>
+</div>
+
+
+</body>
+</html>

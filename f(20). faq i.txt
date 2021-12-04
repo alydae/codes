@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<head>
+ 
+<!--
+ 
+    FAQ I
+        by alydae
+        
+            - do not steal any part of this code
+            - do not even TOUCH the credit
+            - direct questions to enchantedthemes.tumblr.com
+            
+    thank you for using!!!
+
+-->
+ 
+<title>faq</title>
+<link rel="shortcut icon" href="{Favicon}">
+ 
+<!-- scripts - DO NOT TOUCH -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script src="https://static.tumblr.com/rzl30kg/eAxm7a751/jquery.style-my-tooltips.js"></script>
+<script>
+   (function($){
+       $(document).ready(function(){
+           $("[title]").style_my_tooltips({
+               tip_follows_cursor:true,
+               tip_delay_time:200,
+               tip_fade_speed:300
+           }
+               );
+       });
+   })(jQuery);
+</script>
+
+<script>
+$(document).ready(function(){
+    $(".askbox").click(function(){
+        $(".boxes").slideToggle();
+    });
+});
+</script>
+
+<!-- custom font -->
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'> 
+
+<script src="https://kit.fontawesome.com/4fe045a39a.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+<link rel="stylesheet" href="https://static.tumblr.com/p0knose/GQToiq7ub/outicons.css" type="text/css">
+ 
+
+<style type="text/css">
+
+@keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+/*-- selection --*/
+
+::-moz-selection { background:#eee; color:#222; }
+::selection { background:#eee; color:#222; }
+
+/*-- scrollbar --*/
+
+::-webkit-scrollbar {  
+    width:1px;  
+    height:2px;
+}  
+   
+::-webkit-scrollbar-thumb { background-color:#aaa; } /* scrollbar colour */
+ 
+/*-- tooltips --*/
+
+#s-m-t-tooltip {
+    color:#666;
+    background-color:#fafafa; 
+    font-size:8px;
+    font-family:'Open Sans', helvetica, sans-serif;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    text-align:center;
+    position:absolute;
+    padding:0px 5px 0px 5px;
+    margin-top:30px;
+    border:1px solid #eee;
+    z-index:9999;
+}
+
+/*-- tumblr controls --*/
+
+.tmblr-iframe, .iframe-controls–desktop {
+    display:none !important;
+}
+
+/*-- general customisation --*/
+
+/* background colour - change all #fff below if you're changing the colour of the background */
+
+body, #title span, #links, .question i, .answer i { 
+    background-color:#fff; 
+}
+
+table { border:1px solid #fff; }
+tr { border-bottom:50px solid #fff; }
+
+/* border colour - change all #eee below if you're changing the colour of the borders */
+
+.question i { border:1px solid #eee; }
+#title:after { border-top:1px solid #eee; }
+.answer h1, .answer h2 { border-bottom:1px solid #eee; }
+.question, .answer {
+    border-left:1px solid #eee;
+    border-right:1px solid #eee;
+}
+
+body {
+    color:#666; /* text colour */
+    font-style:normal; 
+    font-family:'Open Sans', helvetica, sans-serif; 
+    font-size:10px;
+    font-weight:400;
+    text-decoration:none; 
+    line-height:180%; 
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    -webkit-animation: fadein 1.5s;
+    -moz-animation: fadein 1.5s;
+    -o-animation: fadein 1.5s; 
+    animation: fadein 1.5s;
+}
+
+a {
+    text-decoration:none;
+    color:#444; /* links colour */
+}   
+    
+a:hover {
+    color:#bad1e7; /* links hover colour */
+    cursor:pointer;
+}
+
+a, a:hover {
+    transition-duration: 0.6s;  
+    -moz-transition-duration: 0.6s;  
+    -webkit-transition-duration: 0.6s;  
+    -o-transition-duration: 0.6s;    
+}
+
+b, strong { font-weight:600; color:#444; }
+i, em { font-style:italic; }
+
+/*-- header --*/
+
+header {
+    position:relative;
+    margin:150px auto 0;
+    width:600px;
+    height:40px;
+}
+
+header img {
+    float:left;
+    width:40px;
+    height:40px;
+    border-radius:5px;
+}
+
+#title {
+    float:left;
+    margin-left:20px;
+    line-height:40px;
+    text-transform:uppercase;
+    font-size:14px;
+    font-weight:bold;
+    letter-spacing:2px;
+    color:#000; /* title colour */
+}
+
+#title span { padding-right:20px; }
+
+#title:after {
+    content:"";
+    position:absolute;
+    top:20px;
+    bottom:0;
+    left:60px;
+    right:0;
+    height:1px;
+    z-index:-1;
+}
+
+#links {
+    float:right;
+    line-height:40px;
+    padding-left:13px;
+    font-style:italic;
+}
+
+#links a { margin-left:7px; }
+
+/*-- content --*/
+
+#content { 
+    position:relative;
+    width:600px; 
+    margin:50px auto 150px;
+}
+
+/*-- questions --*/
+
+table {
+    position:relative;
+    width:100%;
+    margin-bottom:0px;
+    border-collapse:collapse;
+}
+
+td { padding:10px; width:50%; }
+
+.question {
+    font-style:italic;
+    font-weight:600;
+    font-size:11px;
+    color:#222; /* question text colour */
+    background:#fafafa; /* question background colour */
+}
+
+.question i {
+    color:#222; /* question mark colour */
+    width:18px;
+    text-align:center;
+    font-size:18px;
+    padding:7px;
+    margin-right:10px;
+    float:left;
+}
+
+.answer { vertical-align:top; }
+
+.answer h1, .answer h2 {
+    margin-top:-10px;
+    margin-bottom:5px;
+    margin-right:-10px;
+    padding-bottom:5px;
+    font-style:italic;
+    font-weight:600;
+    font-size:11px;
+    color:#222; /* answers subtitle colour */
+}
+
+.answer h2 {
+    margin-left:-10px;
+    margin-right:0px;
+    padding-left:10px;
+}
+
+/*-- ask and submit boxes --*/
+
+.askbox { text-align:center; font-style:italic; }
+.askbox:hover { cursor:pointer; }
+
+.boxes { display:none; }
+
+/*-- credit - DO NOT TOUCH --*/
+
+.credit a {
+    font-size:10px;
+    bottom:15px;
+    right:20px;
+    position:fixed;
+    text-transform:uppercase;
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<header>
+	<!-- the default is your icon. if you want to change it, remove {PortraitURL-128} and replace it with the image url of the one you want. -->
+    <img src="{PortraitURL-128}"/>
+    <div id="title"><span>questions and answers</span></div> <!-- title -->
+    <div id="links">
+    <!-- feel free to add more! -->
+        <a href="/">index</a>
+        <a href="/">link</a>
+        <a href="/archive">archive</a>
+    </div>
+</header>
+
+
+<div id="content">
+
+<!-- EDITING YOUR QUESTIONS AND ANSWERS
+
+there are two layouts available and each of them have different templates.
+
+1. question on the left, answer on the right
+    <tr>
+        <td class="question">
+        <i class="fas fa-question"></i>
+        this is your question</td>
+        <td class="answer">
+        <h1>[username] answered:</h1>
+        and this is your answer</td>
+    </tr>
+    
+2. answer on the left, question on the right
+    <tr> 
+        <td class="answer">
+        <h2>[username] answered:</h2>
+        and this is your answer</td>
+        <td class="question">
+        <i class="fas fa-question"></i>
+        this is your question</td>
+    </tr>
+    
+with both layouts, the question mark icon and the 'username answered' header are optional - if you don't want them, just delete that line. [username] is where you put your url or your name, or if you don't like that subtitle, change it to whatever you want!
+
+-->
+
+<table>
+    <tr>
+        <td class="question">
+        <i class="fas fa-question"></i>
+        this is your question</td>
+        <td class="answer">
+        <h1>[username] answered:</h1>
+        and this is your answer</td>
+    </tr>
+    
+    <tr> 
+        <td class="answer">
+        <h2>[username] answered:</h2>
+        and this is your answer</td>
+        <td class="question">
+        <i class="fas fa-question"></i>
+        this is your question</td>
+    </tr>
+    
+    <tr>
+        <td class="question">
+        <i class="fas fa-question"></i>
+        this is your question</td>
+        <td class="answer">
+        <h1>[username] answered:</h1>
+        and this is your answer</td>
+    </tr>
+    
+    <tr> 
+        <td class="answer">
+        <h2>[username] answered:</h2>
+        and this is your answer</td>
+        <td class="question">
+        <i class="fas fa-question"></i>
+        this is your question</td>
+    </tr>
+</table>
+
+<!-- optional description -->
+<p>this is an optional description</p>
+
+
+<!-- EDITING THE ASK AND SUBMIT BOXES
+
+by default, the ask and submit boxes are hidden and will show on click. if you don't want that to happen, delete the following sections
+
+    class="askbox"
+    <div class="boxes"> and the </div> after the submit box
+
+-->
+
+<p class="askbox">continue to my ask and submit boxes</p>
+
+<div class="boxes">
+    <!-- ask box - delete the section below if not required -->
+    <iframe frameborder="0" border="0" scrolling="no" width="100%" height="190px" allowtransparency="true" src="https://www.tumblr.com/ask_form/{Name}.tumblr.com" style="background-color:transparent; overflow:hidden;"></iframe>
+    <!-- submit box - delete the section below if not required  -->
+    <p><iframe frameborder="0" border="0" scrolling="no" width="100%" height="370px" allowtransparency="true" src="https://www.tumblr.com/submit_form/{Name}.tumblr.com" style="background-color:transparent; overflow:hidden;"></iframe>
+</div>
+
+<p>
+
+
+</div><!-- end content -->
+
+
+<!-- credit - DO NOT TOUCH -->
+
+<div class="credit">
+    <a href="https://enchantedthemes.tumblr.com" title="alydae">A.</a>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<head>
+ 
+<!--
+ 
+    BLOGROLL III
+        by alydae
+        
+            - do not steal any part of this code
+            - do not even TOUCH the credit
+            - since tumblr's update, please read this before asking anything 
+			https://enchantedthemes.tumblr.com/post/181830382151/blogrolls-not-showing-fix
+            - direct questions to enchantedthemes.tumblr.com
+            
+    thank you for using!!!
+
+-->
+ 
+<title>blogroll</title>
+<link rel="shortcut icon" href="{Favicon}">
+ 
+<!-- scripts - DO NOT TOUCH -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script src="https://static.tumblr.com/rzl30kg/eAxm7a751/jquery.style-my-tooltips.js"></script>
+<script>
+   (function($){
+       $(document).ready(function(){
+           $("[title]").style_my_tooltips({
+               tip_follows_cursor:true,
+               tip_delay_time:200,
+               tip_fade_speed:300
+           }
+               );
+       });
+   })(jQuery);
+</script>
+
+<!-- custom font -->
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'> 
+
+<script src="https://kit.fontawesome.com/4fe045a39a.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+ 
+
+<style type="text/css">
+
+@keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+/*-- selection --*/
+
+::-moz-selection { background:#eee; color:#222; }
+::selection { background:#eee; color:#222; }
+
+/*-- scrollbar --*/
+
+::-webkit-scrollbar {  
+    width:1px;  
+    height:2px;
+}  
+   
+::-webkit-scrollbar-thumb { background-color:#aaa; } /* scrollbar colour */
+ 
+/*-- tooltips --*/
+
+#s-m-t-tooltip {
+    color:#666;
+    background-color:#fafafa; 
+    font-size:8px;
+    font-family:'Open Sans', helvetica, sans-serif;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    text-align:center;
+    position:absolute;
+    padding:0px 5px 0px 5px;
+    margin-top:30px;
+    border:1px solid #eee;
+    z-index:9999;
+}
+
+/*-- tumblr controls --*/
+
+.tmblr-iframe, .iframe-controls–desktop {
+    display:none !important;
+}
+
+/*-- hover --*/
+
+a, a:hover, .blog, .blog:hover, .blog img, .blog:hover img, .blog:hover a, .blog a  {
+    transition-duration: 0.4s;  
+    -moz-transition-duration: 0.4s;  
+    -webkit-transition-duration: 0.4s;  
+    -o-transition-duration: 0.4s;
+}
+
+/*-- general customisation --*/
+
+body {
+    color:#666; /* text colour */
+    background-color:#fff; /* background colour */
+    font-style:normal; 
+    font-family:'Open Sans', helvetica, sans-serif; 
+    font-size:10px; 
+    font-weight:400;
+    text-decoration:none; 
+    line-height:180%; 
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    -webkit-animation: fadein 1.5s;
+    -moz-animation: fadein 1.5s;
+    -o-animation: fadein 1.5s; 
+    animation: fadein 1.5s;
+}
+
+a {
+    text-decoration:none;
+    color:#444; /* links colour */
+}   
+    
+a:hover {
+    color:#bad1e7; /* links hover colour */
+    cursor:pointer;
+}
+
+b, strong { font-weight:600; color:#444; }
+i, em { font-style:italic; }
+
+
+/*-- footer --*/
+
+#bottom {
+    position:fixed;
+    bottom:0;
+    left:0;
+    height:75px;
+    width:100vw;
+    background:#fff;
+    z-index:999!important;
+    border-top:1px solid #eee;
+}
+
+.links { margin-top:30px; text-align:center; }
+
+.links a {
+    display:inline;
+    font-style:italic;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.lnr {
+    padding:5px;
+    background:#fafafa;
+    border:1px solid #eee;
+    margin-right:7px; 
+    font-size:12px;
+}
+
+a:hover .lnr { background:#fff; }
+
+/*-- content --*/
+
+#main {
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-57%);
+    width:calc(4 * 237px + 1px);
+    /* (number of columns * blog width w/margin + 1px) */
+    max-height:calc(8 * 54px);
+    /* (number of rows * blog height w/margin) */
+    overflow:scroll;
+}
+
+.title {
+    font-size:12px;
+    font-weight:700;
+    line-height:40px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    color:#000; /* title colour */
+    background:#fff!important;
+    font-style:normal!important;
+}
+
+.blog {
+    height:40px;
+    width:200px;
+    float:left;
+    margin:10px 10px 10px 10px;
+    padding-right:15px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    background:#fafafa; /* blogs background colour */
+    border:1px solid #eee; /* blogs border */
+}
+
+.blog img { 
+    height:40px;
+    width:40px;
+    float:left;
+    position:relative;
+    margin-right:15px;
+}
+
+.blog a {
+    line-height:40px;
+    position:relative;
+    text-transform:uppercase;
+    font-style:italic;
+    letter-spacing:1px;
+}
+
+.blog:hover { 
+    background:#fff; /* blogs background hover colour */
+}
+
+
+/*-- credit - DO NOT TOUCH --*/
+
+.credit a {
+    font-size:10px;
+    bottom:15px;
+    right:20px;
+    position:fixed;
+    text-transform:uppercase;
+    z-index:999999!important;
+}
+
+</style>
+</head>
+
+
+<body>
+    
+<div id="main">
+
+<!-- you don't need to edit this!! -->
+<div class="blog title">
+    <img src="{PortraitURL-128}"/>
+    blogroll
+</div>
+
+{block:Following}{block:Followed}
+<div class="blog">
+    <img src="{FollowedPortraitURL-128}"/>
+    <a href="{FollowedURL}" title="{FollowedTitle}">{FollowedName}</a>
+</div>
+{/block:Followed}{/block:Following}
+
+</div>
+
+<div id="bottom">
+    <div class="links">
+    <!-- feel free to add more! -->
+        <a href="/"><span class="lnr lnr-home"></span>index</a>
+        <a href="/ask"><span class="lnr lnr-envelope"></span>message</a>
+        <a href=""><span class="lnr lnr-star"></span>link</a>
+        <a href=""><span class="lnr lnr-menu"></span>link</a>
+        <a href="/archive"><span class="lnr lnr-calendar-full"></span>archive</a>
+    </div>
+
+</div>
+
+
+<!-- credit - DO NOT TOUCH -->
+
+<div class="credit">
+    <a href="http://enchantedthemes.tumblr.com" title="alydae">A.</a>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<head>
+ 
+<!--
+ 
+    BLOGROLL II (updated 10/1/19)
+        by alydae
+        
+            - do not steal any part of this code
+            - do not even TOUCH the credit
+            - since tumblr's update, please read this before asking anything 
+			https://enchantedthemes.tumblr.com/post/181830382151/blogrolls-not-showing-fix
+            - direct questions to enchantedthemes.tumblr.com
+            
+    thank you for using!!!
+ 
+-->
+ 
+<title>blogroll</title>
+<link rel="shortcut icon" href="{Favicon}">
+ 
+<!-- scripts - DO NOT TOUCH -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script src="https://static.tumblr.com/rzl30kg/eAxm7a751/jquery.style-my-tooltips.js"></script>
+<script>
+   (function($){
+       $(document).ready(function(){
+           $("[title]").style_my_tooltips({
+               tip_follows_cursor:true,
+               tip_delay_time:200,
+               tip_fade_speed:300
+           }
+               );
+       });
+   })(jQuery);
+</script>
+
+<!-- custom font -->
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+<script src="https://kit.fontawesome.com/4fe045a39a.js" crossorigin="anonymous"></script>
+ 
+ 
+<style type="text/css">
+
+@keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+/*-- selection --*/
+
+::-moz-selection { background:#eee; color:#222; }
+::selection { background:#eee; color:#222; }
+
+/*-- scrollbar --*/
+
+::-webkit-scrollbar {  
+    width:1px;  
+    height:2px;
+}  
+   
+::-webkit-scrollbar-thumb { background-color:#aaa; } /* scrollbar colour */
+ 
+/*-- tooltips --*/
+
+#s-m-t-tooltip {
+    color:#666;
+    background-color:#fafafa; 
+    font-size:8px;
+    font-family:'Open Sans', helvetica, sans-serif;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    text-align:center;
+    line-height:180%;
+    position:absolute;
+    padding:0px 5px 0px 5px;
+    margin-top:30px;
+    border:1px solid #eee;
+    z-index:9999;
+}
+
+/*-- tumblr controls --*/
+
+.tmblr-iframe, .iframe-controls–desktop {
+    display:none !important;
+}
+
+/*-- general customisation --*/
+
+a, a:hover, #br img, #br img:hover {
+    transition-duration: 0.6s;  
+    -moz-transition-duration: 0.6s;  
+    -webkit-transition-duration: 0.6s;  
+    -o-transition-duration: 0.6s    
+}
+
+body {
+    background-color:#fff; /* background colour */
+    font-style:normal; 
+    font-family:'Open Sans', helvetica, sans-serif; 
+    font-size:10px; 
+    font-weight:400;
+    text-decoration:none; 
+    line-height:250%;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-font-smoothing:antialiased;
+    font-smoothing:antialiased;
+    -webkit-animation: fadein 1.5s;
+    -moz-animation: fadein 1.5s;
+    -o-animation: fadein 1.5s; 
+    animation: fadein 1.5s;
+}
+
+a {
+    text-decoration:none;
+    color:#444; /* links colour */
+}   
+    
+a:hover {
+    color:#bad0f1; /* links hover colour */
+    cursor:pointer;
+}
+
+/*-- evrything --*/
+
+#container {
+    width:calc(100px + 100px + 74px * 8); /* 8 is the number of blogs per row. change ONLY that number. */
+    margin:0px auto;
+}
+
+/*-- sidebar --*/
+
+#sidebar {
+    position:fixed;
+    width:100px;
+    top:50%;
+    transform:translate(0%, -50%);
+    text-align:center;
+}
+
+.icon {
+    height:50px;
+    width:50px;
+    margin:0px auto;
+}
+
+.icon img {
+    height:50px;
+    width:50px;
+    border-radius:50%;
+}
+
+.title {
+    margin-top:20px;
+    padding:5px;
+    text-transform:uppercase;
+    font-size:15px;
+    font-weight:bold;
+    letter-spacing:1px;
+    color:#222; /* title colour */
+}
+
+.links { margin-top:5px; margin-left:5px; text-align:left; }
+
+.links a {
+    letter-spacing:0.5px;
+    text-transform:uppercase;
+    display:block;
+}
+
+.links i { padding-right:10px; font-size:11px; }
+
+/*-- blogs--*/
+
+#br {
+    width:calc(74px * 8); /* 8 is the number of blogs per row. change ONLY that number. */
+    margin-top:100px;
+    margin-left:200px;
+    margin-bottom:100px;
+}
+ 
+#br img {
+    width:60px;
+    padding:7px;
+    border-radius:10px;
+    -webkit-filter: grayscale(50%);
+    -moz-filter: grayscale(50%);
+    -o-filter: grayscale(50%);
+    -ms-filter: grayscale(50%);
+}
+
+#br img:hover {
+    border-radius:50%;
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+}
+
+/*-- credit - DO NOT TOUCH --*/
+
+.credit a {
+    bottom:15px;
+    right:20px;
+    position:fixed;
+    text-transform:uppercase;
+}
+
+</style>
+</head>
+
+
+<body>
+
+<div id="container">
+
+<div id="sidebar">
+    <!-- the default is your icon. if you want to change it, remove {PortraitURL-128} and replace it with the image url of the one you want -->
+    <div class="icon"><img src="{PortraitURL-128}"/></div>
+    <div class="title">blogroll</div> <!-- title -->
+    <div class="links">
+    <!-- this is where your header links are. feel free to add more. -->
+        <a href="/"><i class="fas fa-home fa-fw"></i>return</a>
+        <a href="/ask"><i class="far fa-envelope fa-fw"></i>inbox</a>
+        <a href="/"><i class="fas fa-bars fa-fw"></i>link</a>
+        <a href="/"><i class="far fa-star"></i>link</a>
+        <!-- do not remove this one!!! -->
+        <a href="http://enchantedthemes.tumblr.com"><i class="fas fa-code"></i>credit</a>
+    </div>
+</div>
+    
+    
+    
+<div id="br">
+{block:Following}{block:Followed}<a href="{FollowedURL}" title="{FollowedName}"><img src="{FollowedPortraitURL-128}">{/block:Followed}{/block:Following}
+</div>
+
+
+</div>  
+    
+
+<!-- credit - DO NOT TOUCH -->
+
+<div class="credit">
+    <a href="http://enchantedthemes.tumblr.com" title="alydae">A.</a>
+</div>
+
+
+</body>
+</html>
