@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<head>
+ 
+<!--
+ 
+    ALL-IN-ONE: NEPENTHE
+    FAQ PAGE
+        by alydae
+        
+            - do not steal any part of this code
+            - do not even TOUCH the credit
+            - direct questions to enchantedthemes.tumblr.com
+            
+    thank you for using!!!
+
+-->
+ 
+<title>faq</title>
+<link rel="shortcut icon" href="{Favicon}">
+ 
+<!-- scripts - DO NOT TOUCH -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script src="https://static.tumblr.com/rzl30kg/eAxm7a751/jquery.style-my-tooltips.js"></script>
+<script>
+   (function($){
+       $(document).ready(function(){
+           $("[title]").style_my_tooltips({
+               tip_follows_cursor:true,
+               tip_delay_time:200,
+               tip_fade_speed:300
+           }
+               );
+       });
+   })(jQuery);
+</script>
+
+
+<!-- custom font -->
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'> 
+
+<script src="https://kit.fontawesome.com/4fe045a39a.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+ 
+
+<style type="text/css">
+
+@keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+/*-- selection --*/
+
+::-moz-selection { background:#eee; color:#222; }
+::selection { background:#eee; color:#222; }
+
+/*-- scrollbar --*/
+
+::-webkit-scrollbar {  
+    width:1px;  
+    height:2px;
+}  
+   
+::-webkit-scrollbar-thumb { background-color:#aaa; } /* scrollbar colour */
+ 
+/*-- tooltips --*/
+
+#s-m-t-tooltip {
+    color:#666;
+    background-color:#fff; 
+    font-size:8px;
+    font-family:'Open Sans', helvetica, sans-serif;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    text-align:center;
+    position:absolute;
+    padding:0px 5px 0px 5px;
+    margin-top:30px;
+    border:1px solid #eee;
+    z-index:9999;
+}
+
+/*-- tumblr controls --*/
+
+.tmblr-iframe, .iframe-controls–desktop {
+    display:none !important;
+}
+
+/*-- general customisation --*/
+
+body {
+    color:#666; /* text colour */
+    background-color:#fafafa; /* background colour */
+    font-style:normal; 
+    font-family:'Open Sans', helvetica, sans-serif; 
+    font-size:10px; 
+    font-weight:400;
+    text-decoration:none; 
+    line-height:180%; 
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    -webkit-animation: fadein 1.5s;
+    -moz-animation: fadein 1.5s;
+    -o-animation: fadein 1.5s; 
+    animation: fadein 1.5s;
+}
+
+a {
+    text-decoration:none;
+    color:#444; /* links colour */
+    transition-duration: 0.6s;  
+    -moz-transition-duration: 0.6s;  
+    -webkit-transition-duration: 0.6s;  
+    -o-transition-duration: 0.6s;
+}   
+    
+a:hover {
+    color:#9cdfed; /* links hover colour */
+    cursor:pointer;
+    transition-duration: 0.6s;  
+    -moz-transition-duration: 0.6s;  
+    -webkit-transition-duration: 0.6s;  
+    -o-transition-duration: 0.6s;
+}
+
+b, strong { font-weight:700; color:#444; }
+i, em { font-style:italic; }
+
+h1 {
+    color:#222; /* title colour */
+    text-transform:uppercase;
+    text-align:right;
+    font-weight:700;
+    font-size:13px;
+    letter-spacing:1px;
+    padding:13px;
+    padding-right:10px;
+    margin:0;
+    line-height:100%;
+}
+
+/*-- container --*/
+
+content {
+    position:fixed;
+    height:380px;
+    width:750px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+/*-- sidebar --*/
+
+#sidebar {
+    float:left;
+    left:0px;
+    margin-top:25.5%;
+    transform:translateY(-50%);
+    width:120px;
+    background:#fff; /* sidebar background colour */
+    border:1px solid #eee;
+}
+
+#sidebar img {
+    position:relative;
+    width:120px;
+    height:auto;
+    margin:0;
+}
+
+.t, #sidebar img, .desc, h1 { border-bottom:1px solid #eee; }
+
+.links, .desc { margin-top:-5px; padding:10px; text-align:right; }
+.links a { display:block; font-style:italic; }
+.links a:after { content:'<'; margin-left:7px; }
+.links a:hover { padding-right:10px; }
+
+/*-- faq --*/
+
+#main {
+    float:right;
+    padding:15px;
+    left:70px;
+    width:530px;
+    height:100%;
+    overflow-Y:scroll;
+    overflow-X:hidden;
+    border:1px solid #eee;
+    background:#fff; /* container background colour */
+}
+
+.question { width:570px; margin-bottom:20px; }
+
+.question .fa {
+    width:14px;
+    text-align:center;
+    font-size:14px;
+    font-weight:700;
+    padding:8px;
+    margin-top:0px;
+    background:#fafafa; /* question icon background colour */
+    border:1px solid #eee; 
+    float:left;
+}
+
+.q, .an { border:1px solid #eee; padding:6px; margin:5px 40px; }
+    
+.q {
+    background:#fafafa; /* question background colour */
+    font-size:11px;
+    font-weight:600;
+    font-style:italic;
+}
+
+/*-- credit - DO NOT TOUCH --*/
+
+.credit a {
+    font-size:10px;
+    bottom:15px;
+    right:20px;
+    position:fixed;
+    text-transform:uppercase;
+}
+
+</style>
+</head>
+
+
+<body>
+
+<content>
+    
+<div id="sidebar">
+    <h1>faq</h1> <!-- page title -->
+    <!-- the default is your icon. if you want to change it, remove {PortraitURL-128} and replace it with the image url of the one you want. -->
+    <img src="{PortraitURL-128}"/>
+    <!-- you can delete this if you don't want it -->
+    <div class="desc">this description is optional. you can delete it if you don't want it.</div>
+    <div class="links">
+    <!-- this is where your header links are. feel free to add more. -->
+        <a href="/">home</a>
+        <a href="/ask">message</a>
+        <a href="/">link</a>
+        <!-- do not remove this one!!! -->
+        <a href="http://enchantedthemes.tumblr.com">credit</a>
+    </div>
+</div>
+
+
+<div id="main">
+
+<!-- 
+template:
+<div class="question">
+<i class="fa fas fa-question"></i>
+    <div class="q">question</div>
+<i class="fa far fa-comment" style="background:#fff;"></i>
+    <div class="an">here's the answer</div>
+</div>
+-->
+
+<div class="question">
+<i class="fa fas fa-question"></i>
+    <div class="q">question</div>
+<i class="fa far fa-comment" style="background:#fff;"></i>
+    <div class="an">here's the answer</div>
+</div>
+
+
+<div class="question">
+<i class="fa fas fa-question"></i>
+    <div class="q">question</div>
+<i class="fa far fa-comment" style="background:#fff;"></i>
+    <div class="an">here's the answer</div>
+</div>
+
+
+<div class="question">
+<i class="fa fas fa-question"></i>
+    <div class="q">question</div>
+<i class="fa far fa-comment" style="background:#fff;"></i>
+    <div class="an">here's the answer</div>
+</div>
+
+
+<div class="question">
+<i class="fa fas fa-question"></i>
+    <div class="q">question</div>
+<i class="fa far fa-comment" style="background:#fff;"></i>
+    <div class="an">here's the answer</div>
+</div>
+
+
+<!-- if you don't want the ask box, delete this section below -->
+    <!-- optional text. delete this if you don't want any -->
+    <p style="margin-left:15px;">If you have any more questions, feel free to message me!</p>
+<iframe frameborder="0" border="0" scrolling="no" width="530px" height="190" allowtransparency="true" src="http://www.tumblr.com/ask_form/{Name}.tumblr.com" style="background-color:transparent; overflow:hidden; margin:15px;"></iframe>
+
+</div>  <!-- end main -->
+    
+</content>
+
+
+<!-- credit - DO NOT TOUCH -->
+
+<div class="credit">
+    <a href="http://enchantedthemes.tumblr.com" title="alydae">A.</a>
+</div>
+
+
+</body>
+</html>
